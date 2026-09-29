@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gabriel Duval">
+    <title>Mes jeux</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    #titre{
+        color: green;
+        font-size: 3em;
+        font-family: cursive;
+        text-align: center;
+        text-decoration: underline;
+        margin: 0px;
+    }
+    .format_texte{
+        color: green;
+        font-family: cursive;
+        text-align: center;
+    }
+    #Jeu1{
+        border: 6px solid rgb(18, 1, 114);
+        border-radius: 15px;
+        margin: 2%;
+        display: grid;
+        grid-template-columns: 25vw 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .format_titre_jeu{
+        color: green;
+        font-family: cursive;
+        font-size: 1.5em;
+        text-align: center;
+        grid-column: 1 / -1;
+        margin: 0;
+    }
+    .image{
+        width: 25vw;
+        height: 25vw;
+        object-fit: cover;
+        grid-row: 2 / 4;
+    }
+    a{
+        font-size: 2em;
+        font-family: cursive;
+        color: green;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .liens{
+        display: inline-block;
+        background-color: white;
+        width: 75vw;
+        height: 25vw;
+    }
+    #Jeu2{
+        border: 6px solid rgb(18, 1, 114);
+        border-radius: 15px;
+        margin: 2%;
+        display: grid;
+        grid-template-columns: 25vw 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+</style>
+<body>
+    <h5 id="titre">Bienvenue sur ma page</h5>
+    <h3 class="format_texte">Sur cette page vous pouvez jouez a mes jeux mais également les télécharger en .exe pour une meilleur experience utilisateur</h3>
+    <div id="Jeu1">
+        <h4 class="format_titre_jeu" style="text-decoration: underline;">Idle Nigga</h4>
+        <img src="Images/Coton.png" alt="Image de Coton Simulator en jeu" class="image">
+        <a href="html_jeux/Coton.html" target="_blank" style="text-align: center;">Cliquez ici pour jouer au jeu sur votre navigateur</a>
+        <a href="Jeux_exe/Coton.exe" download>Cliquez ici pour télécharger le .exe du jeu</a>    
+    </div>
+
+    <div id="Jeu2">
+        <h4 class="format_titre_jeu" style="text-decoration: underline;">Tank80</h4>
+        <img src="Images/Tank80.png" alt="Image de Tank80 en jeu" class="image">
+        <a href="html_jeux/Tank80.html" target="_blank" style="text-align: center;">Cliquez ici pour jouer au jeu sur votre navigateur</a>
+        <a href="Jeux_exe/Tank80.exe" download>Cliquez ici pour télécharger le .exe du jeu</a>    
+    </div>
+</body>
+</html>
